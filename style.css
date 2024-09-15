@@ -1,0 +1,159 @@
+:root {
+  --text: #180402;
+  --background: #ffffff;
+  --primary: #eb2c2a;
+  --secondary: #89f4cc;
+  --accent: #4b97ee;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: hsl(0, 0%, 95%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: hsl(0, 0%, 40%);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  padding: 0.75rem 2rem 0.75rem 2rem;
+  transition: background-color 0.1s, scale 0.1s;
+}
+
+button:hover {
+  scale: 1.05;
+  background-color: hsl(0, 0%, 15%);
+}
+
+button:active {
+  scale: 0.95;
+  background-color: hsl(0, 0%, 5%);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+#chatBox {
+  width: 3rem;
+  background-color: var(--secondary);
+  border-radius: 25px;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: scale 0.1s;
+}
+
+#chatBox:hover {
+  scale: 1.1;
+}
+
+#chatBox:active {
+  scale: 0.9;
+}
+
+#relatedPosts {
+  text-align: center;
+}
+
+a {
+  margin: 1rem;
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.content {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 25px;
+}
+
+article {
+  margin: 0 auto;
+  width: 50%;
+  padding: 2rem 4rem 2rem 4rem;
+  background-color: white;
+  border-radius: 25px;
+}
+
+footer {
+  text-align: center;
+  float: left;
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  background-color: black;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+/* .headerNav {
+  background-color: red;
+}
+
+.headerTitle {
+  background-color: blue;
+} */
+
+.articleImg {
+  border-radius: 25px;
+  width: 250px;
+}
+
+/* Media Queries responsive  */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .column {
+    width: 50%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .articleImg {
+    width: 150px;
+  }
+}
+/* Mobile */
+@media (max-width: 480px) {
+  .column {
+    width: 100%;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .articleImg {
+    width: 100px;
+  }
+}
