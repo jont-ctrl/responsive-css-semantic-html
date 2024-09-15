@@ -26,11 +26,12 @@ button {
   background-color: black;
   color: white;
   padding: 0.75rem 2rem 0.75rem 2rem;
-  transition: background-color 0.1s, scale 0.1s;
+  transition: background-color 0.1s, scale 0.1s, box-shadow 0.1s;
 }
 
 button:hover {
   scale: 1.05;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 15%, 0.3);
   background-color: hsl(0, 0%, 15%);
 }
 
@@ -78,6 +79,7 @@ a:hover {
   color: var(--secondary);
 }
 
+/* 3 Column layout */
 .column {
   float: left;
   width: 33.33%;
@@ -118,23 +120,16 @@ header {
   padding-bottom: 2rem;
 }
 
-/* .headerNav {
-  background-color: red;
-}
-
-.headerTitle {
-  background-color: blue;
-} */
-
 .articleImg {
   border-radius: 25px;
-  width: 250px;
+  width: 500px;
+  /* width: 100%; here is better but doing resposnive image using media queries */
 }
 
 /* Media Queries responsive  */
 
 /* Tablet */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .column {
     width: 50%;
   }
@@ -142,7 +137,7 @@ header {
     font-size: 2rem;
   }
   .articleImg {
-    width: 150px;
+    width: 250px;
   }
 }
 /* Mobile */
@@ -151,9 +146,9 @@ header {
     width: 100%;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .articleImg {
-    width: 100px;
+    width: 150px;
   }
 }
