@@ -71,7 +71,7 @@ h2 {
 }
 
 a {
-  margin: 1rem;
+  margin: 0.5rem;
   color: var(--accent);
 }
 
@@ -116,8 +116,24 @@ header {
   margin-bottom: 3rem;
   background-color: black;
   color: white;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.headerTitle {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  top: 2rem;
+  left: 1rem;
+}
+
+.headerNav {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  top: 2.5rem;
+  right: 1rem;
 }
 
 .articleImg {
@@ -150,5 +166,13 @@ header {
   }
   .articleImg {
     width: 150px;
+  }
+  .headerTitle {
+    position: static;
+  }
+
+  .headerNav {
+    position: static;
+    margin-top: 1rem;
   }
 }
